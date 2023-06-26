@@ -4,7 +4,6 @@
 
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="./assets/Logo%20lujoso%20vintage%20dorado%20azul.png" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -31,7 +30,7 @@
 
 # 📖 [Web_Dev_Greety] <a name="about-project"></a>
 
-> This project is a day 2 code practice to learn best practices, documentation and linterns
+> This project is to showcase the abilities of the company web_dev_greety
 
 **[Web_Dev_Greety]** is a landing page to promote web developer services for small busynesses
 
