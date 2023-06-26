@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+
 * {
-  font-family: 'tbh', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,4 +10,19 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.navbar {
+  padding: 1.5rem 4rem;
+}
+
+.navbar__logo--wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 60px;
+  height: 60px;
 }
