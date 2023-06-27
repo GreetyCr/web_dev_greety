@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("nuA-SiNznzXxQhc40");
+    })();
+  </script>
   <title>Document</title>
 </head>
 <body>
@@ -25,7 +30,7 @@
         Transformamos tus ideas en páginas web impresionantes sin romper tu presupuesto
       </p>
       <button class="headline__text--button">
-        CONTACTAR
+        <a href="#contact__form">CONTACTAR</a>
       </button>
     </div>
     <div class="headline__img--wrapper">
@@ -74,5 +79,84 @@
       </div>
     </div>
   </section>
+
+  <section class="faq-container container-padding">
+    <h2 class="faq-title">Preguntas frecuentes</h2>
+    <hr class="faq-divider">
+    <div class="faq-item">
+      <h3 class="faq-question">¿Cuánto cuesta el servicio de creación de páginas web?</h3>
+      <p class="faq-answer">Nuestro servicio de creación de páginas web tiene un costo base de $100. Además, debes considerar el costo del nombre de dominio, que generalmente varía entre $5 y $12, aunque este precio puede cambiar.</p>
+    </div>
+    <hr class="faq-line">
+    <div class="faq-item">
+      <h3 class="faq-question">¿Cuánto tiempo tarda el proceso de diseño y desarrollo?</h3>
+      <p class="faq-answer">
+        El tiempo de desarrollo puede variar dependiendo de la complejidad de la página web. Sin embargo, nos esforzamos por entregar todos los proyectos en un plazo de 2 a 4 semanas.</p>
+    </div>
+    <hr class="faq-line">
+    <div class="faq-item">
+      <h3 class="faq-question">¿Puedo solicitar cambios una vez que la página web esté completa?</h3>
+      <p class="faq-answer">
+        Por supuesto. Tu satisfacción es nuestra prioridad. Una vez que la página web esté completa, revisaremos juntos el resultado y podrás solicitar los cambios que consideres necesarios.</p>
+    </div>
+  </section>
+  
+  <section id="contact__form" class="modal">
+    <div class="modal__half modal__about">
+      <h3 class="modal__title modal__title--about">Aquí un poco sobre nosotros.</h3>
+      <h4 class="modal__sub-title modal__sub-tittle--about">Desarrollo de Software</h4>
+      <p class="modal__para">
+        Bienvenido al futuro digital con nuestro apasionado equipo de <b class="orange"> magos tecnológicos</b>.  Nos consideramos <b class="orange">artesanos del siglo XXI</b>, perfeccionando soluciones digitales de alta calidad, especialmente diseñadas para propulsar tu negocio.
+        <br>
+        Nos destacamos por un enfoque <b class="orange">centrado en el cliente,</b>  comprendiendo profundamente tus necesidades para crear productos que <b class="orange">trascienden tus expectativas.</b>
+        <br>
+        Estamos comprometidos con la <b class="orange">Integridad, innovación</b> y <b class="orange">excelencia.</b> Nos emociona ser tus aliados en tu viaje digital, ayudándote a alcanzar tus metas en línea.
+      </p>
+      <div class="modal__languages">
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+          <span class="language__name">HTML</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+          <span class="language__name">CSS</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+          <span class="language__name">Javascript</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+          <span class="language__name">React</span>
+        </figure>
+      </div>
+    </div>
+    <div class="modal__half modal__contact">
+      <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+      <h3 class="modal__title modal__title--contact">Contáctanos</h3>
+      <h3 class="modal__sub-title modal__sub-title--contact">Queremos escuchar de vos.</h3>
+      <form id="contact__form" onsubmit="contact(event)">
+        <div class="form__item">
+          <label class="for__item--label">Nombre</label>
+          <input class="input" type="text" name="user_name" required></input>
+        </div>
+        <div class="form__item">
+          <label class="for__item--label">Email</label>
+          <input class="input" type="email" name="user_email" required></input>
+        </div>
+        <div class="form__item">
+          <label class="for__item--label">Mensaje</label>
+          <textarea class="input" type="text" name="message" required></textarea>
+         </div>
+        <button id="contact__submit" class="form__submit">
+              Enviar  
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+
+
 </body>
 </html>
